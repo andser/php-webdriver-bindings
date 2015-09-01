@@ -18,17 +18,19 @@ Latest version 0.9.1 works properly with Selenium server 2.37.0
 
 Example
 
+<?php
 require_once "phpwebdriver/WebDriver.php";
-require("phpwebdriver/LocatorStrategy.php");
+require_once "phpwebdriver/LocatorStrategy.php";
 
 $webdriver = new WebDriver("localhost", "4444");
 $webdriver->connect("firefox");
 $webdriver->get("http://google.com");
+
 $element = $webdriver->findElementBy(LocatorStrategy::name, "q");
-$element->sendKeys(array("selenium google code" ) );
+$element->sendKeys(array("selenium with php"));
 $element->submit();
 
-$webdriver->close();
+//$webdriver->close();
 
 combobox handling
 
