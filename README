@@ -8,6 +8,7 @@ To see how it works see test directory.
 /////
 
 Introduction
+
 This is site for developers of PHP bindings for Selenium WebDriver (Selenium 2). This PHP library allows creating functional webdriver tests with PHP.
 
 Details
@@ -17,6 +18,7 @@ Latest version 0.9.1 works properly with Selenium server 2.37.0
 
 Example
 
+```
 require_once "phpwebdriver/WebDriver.php";
 require("phpwebdriver/LocatorStrategy.php");
 
@@ -28,6 +30,7 @@ $element->sendKeys(array("selenium google code" ) );
 $element->submit();
 
 $webdriver->close();
+```
 
 combobox handling
 
