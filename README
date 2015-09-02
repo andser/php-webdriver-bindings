@@ -1,7 +1,7 @@
 PHPWebdriver 
 
 This is library for writing functional Selenium 2 Webdriver tests in PHP.
-It works using JsonWireProtocol to comunicate with Selenium server.
+It works using JsonWireProtocol to communicate with Selenium server.
 
 To see how it works see test directory.
 
@@ -12,7 +12,8 @@ Introduction
 This is site for developers of PHP bindings for Selenium WebDriver (Selenium 2). This PHP library allows creating functional webdriver tests with PHP.
 
 Details
-Library comunicates with Selenium Server using JsonWireProtocol. Requires curl in PHP. List of implemented methods: implemented_methods.
+
+Library communicates with Selenium Server using JsonWireProtocol. Requires curl in PHP. List of implemented methods: implemented_methods.
 
 Latest version 0.9.1 works properly with Selenium server 2.37.0
 
@@ -56,7 +57,7 @@ class WebTestCase extends CWebDriverTestCase
         $this->setBrowserUrl('http://yourapp123.com');
     }
 
-        /** generate screenshot if any test has failed */
+    /** generate screenshot if any test has failed */
     protected function tearDown()
     {
         if( $this->hasFailed() ) {
