@@ -1,0 +1,9 @@
+{
+  "name": "andser/php-webdriver-bindings",
+  "description": "Library for writing functional Selenium 2 Webdriver tests in PHP",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
